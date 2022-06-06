@@ -1,0 +1,13 @@
+---
+- name: Include vars
+  include_vars: ../vars/ah_collection_publish.yml
+  tags:
+    - alltags
+    - publish
+
+- import_role:
+    name: redhat_cop.ah_configuration.
+  tags:
+    - alltags
+    - publish
+...
