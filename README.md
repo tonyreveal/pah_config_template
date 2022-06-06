@@ -71,7 +71,7 @@ Variables
 
     ah_ee_registries
 
-        Dictionary of EE registries to index.  One example exists that will need to be filled in.  You can also copy / paste the example for additional EE registries to index. 
+        Dictionary of EE registries to index.  One example exists that will need to be filled in.  You can also copy / paste the example for additional EE registries to index.
 
 `vars/ah_ee_registry_sync.yml`:
 

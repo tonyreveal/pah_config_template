@@ -5,7 +5,8 @@
     - alltags
     - ee_namespaces
 
-- import_role:
+- name: Import ah_configuration role
+  import_role:
     name: redhat_cop.ah_configuration.ee_namespace
   tags:
     - alltags

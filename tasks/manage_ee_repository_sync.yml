@@ -5,7 +5,8 @@
     - alltags
     - reposync
 
-- import_role:
+- name: Import ah_configuration role
+  import_role:
     name: redhat_cop.ah_configuration.ee_repository_sync
   tags:
     - alltags

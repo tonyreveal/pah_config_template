@@ -1,3 +1,4 @@
+---
 - name: Playbook to configure Private Automation Hub
   hosts: localhost
   connection: local
@@ -27,7 +28,7 @@
         - alltags
         - users
 
-    # All tasks below here may need to be re-ordered so they 
+    # All tasks below here may need to be re-ordered so they
     # execute in a particular order.
     - name: Include task for managing collection namespaces
       include_tasks: tasks/manage_collection_namespaces.yml

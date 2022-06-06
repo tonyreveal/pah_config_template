@@ -5,7 +5,8 @@
     - alltags
     - registries
 
-- import_role:
+- name: Import ah_configuration role
+  import_role:
     name: redhat_cop.ah_configuration.ee_registry
   tags:
     - alltags

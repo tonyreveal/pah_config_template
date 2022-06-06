@@ -4,7 +4,7 @@
 ---
 ah_ee_registries:
   - name:
-    wait: 
+    wait:
     interval:
     timeout:
 ...
