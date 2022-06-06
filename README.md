@@ -124,7 +124,7 @@ Variables
     validate_certs: false
 
         Whether or not to validate the certificates when connecting to private automation hub.  This is false by default as Private Automation Hub installs with a self-signed certificate unless otherwise provided.
-    
+
     ah_path_prefix:
 
         This is an optional variable.  Review the ah_configuration for information on it's use.  Omit if not needed.
