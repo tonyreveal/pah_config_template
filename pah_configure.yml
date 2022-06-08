@@ -12,14 +12,24 @@
   pre_tasks:
     - name: Include Vars
       include_vars: vars/pah_vars.yml
+      tags:
+        - always
 
   tasks:
-    - name: Include task to manage private automation hub groups
-      include_tasks: tasks/manage_groups.yml
+    - name: Import ah_configuration role
+      import_role:
+        name: redhat_cop.ah_configuration.group
+      vars_files:  vars/ah_groups.yml
       tags:
-        - never
         - alltags
         - groups
+
+    # - name: Include task to manage private automation hub groups
+    #   include_tasks: tasks/manage_groups.yml
+    #   tags:
+    #     - never
+    #     - alltags
+    #     - groups
 
     - name: Include task to manage private automation hub users
       include_tasks: tasks/manage_users.yml
